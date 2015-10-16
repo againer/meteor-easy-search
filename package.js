@@ -14,8 +14,15 @@ Package.on_use(function (api) {
     api.versionsFrom('METEOR@1.0.4');
   }
 
-  api.use(['underscore', 'livedata', 'mongo-livedata', 'meteor',
-    'meteor-platform', 'meteorhacks:aggregate@1.2.1'], ['client', 'server']);
+  api.use([
+    'underscore',
+    'livedata',
+    'mongo-livedata',
+    'meteor',
+    'reywood:publish-composite',
+    'meteor-platform',
+    'meteorhacks:aggregate@1.2.1',
+  ], ['client', 'server']);
 
   api.use(['templating', 'session', 'ui', 'jquery'], 'client');
 
